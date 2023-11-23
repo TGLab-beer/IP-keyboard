@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Тест скорости печати</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Тест скорости печати</h1>
+    <p>
+      Введите ниже следующий текст:
+    </p>
+    <p id="text"></p>
+    <input type="text" id="input" autocomplete="off" oninput="checkText()">
+    <p id="timer"></p>
+    <button onclick="startTest()">Начать тест</button>
+    <p id="result"></p>
+    <p id="error-msg" style="color: red;"></p>
+  </div>
+</body>
+</html>
