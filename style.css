@@ -65,8 +65,26 @@ body{
               margin: 30px;  
             }
 
-#stat_text{
-  margin: 30px;  
+.stat_text{
+  margin: 20px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-shadow: 0.1em 0.1em#212121;
+  font-size: 1.2em;
+  font-weight: bold;
+  
+  
+  line-height: 1;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#stat_text:hover{
+  color: #ffbaba;
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;
 }
 
 #input{
