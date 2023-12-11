@@ -1,5 +1,5 @@
 .container {
-  background-color: #a8ffd8; 
+  background-color: #a8e1ff5f; 
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -19,13 +19,13 @@ body{
 
   #stats { 
     width: 100%;
-    max-width: px; 
     display: flex;
     flex-direction: row;
     height: 100px; 
     } 
     
     #speed_words { 
+    background: linear-gradient(to right, #A8B6FF, #5F77F4);
     background-color: #A8B6FF; 
     border-radius: 20px;
     width: 25%; 
@@ -33,22 +33,22 @@ body{
     }
 
     #speed_symbols { 
-      background-color: #5F77F4; 
+      background: linear-gradient(to right, #5F77F4, #2F49D4);
       border-radius: 20px;
       width: 25%; 
       height: 100px; 
       }
 
       #language { 
-        background-color: #2F49D4; 
+        background: linear-gradient(to right, #2F49D4, #5F77F4);
         border-radius: 20px;
         width: 25%; 
         height: 100px; 
         }
 
         #timer { 
-          background-color: #152CA8; 
-          border-radius: 20px;
+          background: linear-gradient(to right, #5F77F4, #A8B6FF);
+        border-radius: 20px;
           width: 25%; 
           height: 100px;
           color: white;
@@ -94,10 +94,15 @@ body{
       text-shadow: 2px 2px 2px #000;
 }
 
+
+#footer{
+
+}
 #input{
   border-radius: 20px;
   padding: 0.4rem;
   width: 98%;
+  height: 45px;
   border: 1px solid;
 }
 #button_play{
@@ -105,14 +110,19 @@ body{
   padding: 0.4rem;
   width: 25%;
   border: 1px solid;
+  cursor: pointer;
 }
 
 .button_restart{
-  border-radius: 100px;
-  border: none;
-  background-image: url("/D:\Груп_сайт\IP-keyboard\reload_icon.png");
-  background-size: cover;
-  padding: 0.4rem;
-  width: 25%;
+  border-radius: 50%;
+  clip-path: circle(50%);
+  height: 3em;
+  width: 3em;
   border: 1px solid;
+  cursor: pointer;
+  float:right;
+}
+
+img{
+  width: 100%;
 }
