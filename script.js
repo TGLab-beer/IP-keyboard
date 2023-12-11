@@ -43,3 +43,19 @@ const texts = ["Великолепная зеленая трава шуршит 
         input.style.border = "2px solid red";
       }
     }
+    (function(){
+      let timeLeft = 0;
+          function updateTimer() {
+        document.getElementById('timer').textContent = timeLeft;
+      }
+      function countdown() {
+        if (timeLeft > -1) {
+          timeLeft++;
+          updateTimer();
+        } else {
+          clearInterval(timer);
+          alert('Время вышло!');
+        }
+      }
+      let timer = setInterval(countdown, 1000);
+      })();
