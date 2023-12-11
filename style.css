@@ -1,4 +1,5 @@
 .container {
+    background-color: aqua;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -92,13 +93,13 @@
     text-align:center; 
   }
 */
-  #background { 
-    background-color: #EDEDED; 
+  #stats { 
+     
     width: 100%;
     max-width: 1500px; 
     display: flex;
     flex-direction: row;
-    height: 300px; 
+    height: 100px; 
     } 
     
     #speed_words { 
@@ -115,14 +116,14 @@
       height: 100px; 
       }
 
-      #speed_language { 
+      #language { 
         background-color: #2F49D4; 
         border-radius: 20px;
         width: 25%; 
         height: 100px; 
         }
 
-        #speed_timer { 
+        #timer { 
           background-color: #152CA8; 
           border-radius: 20px;
           width: 25%; 
@@ -130,8 +131,11 @@
           }
 
           #texts { 
-            background-color: #152CA8; 
+            background-color: #EDEDED; 
             border-radius: 20px;
-            width: 25%; 
-            height: 100px; 
+            width: 100%; 
+            text-align: justify;
+            display: flex; 
+             
+            
             }
