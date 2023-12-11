@@ -1,8 +1,5 @@
 .container {
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0 auto;
     padding: 20px;
   }
@@ -99,6 +96,7 @@
     background-color: #EDEDED; 
     width: 100%;
     max-width: 1500px; 
+    display: flex;
     flex-direction: row;
     height: 300px; 
     } 
