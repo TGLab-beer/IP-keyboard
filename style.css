@@ -1,5 +1,8 @@
 .container {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     padding: 20px;
   }
@@ -12,7 +15,7 @@
     font-size: 24px;
   }
 
-  .block1 { 
+/*.block1 { 
     margin-left: 100px; 
     border: 1px solid #cccccc; 
     background-color: #A8B6FF; 
@@ -91,3 +94,18 @@
     float: right; 
     text-align:center; 
   }
+*/
+  #background { 
+    background-color: #EDEDED; 
+    width: 100%;
+    max-width: 1500px; 
+    
+    height: 300px; 
+    } 
+    
+    #speed_words { 
+    background-color: #A8B6FF; 
+    border-radius: 20px;
+    width: 150px; 
+    height: 100px; 
+    }
