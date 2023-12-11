@@ -1,5 +1,5 @@
 .container {
-    background-color: aqua;
+  background-color: #a8ffd8; 
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -71,3 +71,30 @@ body{
             #text{
               margin: 30px;  
             }
+
+#stat_text{
+  margin: 30px;  
+}
+
+#input{
+  border-radius: 20px;
+  padding: 0.4rem;
+  width: 98%;
+  border: 1px solid;
+}
+#button_play{
+  border-radius: 100px;
+  padding: 0.4rem;
+  width: 25%;
+  border: 1px solid;
+}
+
+.button_restart{
+  border-radius: 100px;
+  border: none;
+  background-image: url("/D:\Груп_сайт\IP-keyboard\reload_icon.png");
+  background-size: cover;
+  padding: 0.4rem;
+  width: 25%;
+  border: 1px solid;
+}

@@ -11,33 +11,45 @@
 <body>
   <div class="container">
     <h1>Тест скорости печати</h1>
+    
+    <div id="stats">
+    
+      <div id="speed_words" class="stat_block"><div id="stat_text">
+        120 <br>слов в минуту 
+      </div></div>
+      <div id="speed_symbols" class="stat_block"><div id="stat_text">
+        356<br>символово в минуту
+      </div> 
+      </div>
+      <div id="language" class="stat_block"><div id="stat_text">
+        РУ <br>язык
+      </div> 
+      </div>
+      <div id="timer" class="stat_block"><div id="stat_text">
+        0:34 <br>прошло 
+      </div> 
+      </div>
+    </div>
+
     <p>
       Введите ниже следующий текст:
     </p>
-    <p id="text"></p>
-    <input type="text" id="input" autocomplete="off" oninput="checkText()">
-    <p id="result"></p>
-    <p id="error-msg" style="color: red;"></p>
-  
-    <div id="stats">
-    
-      <div id="speed_words" class="stat_block"> 
-        rtyrthshshsfhsyhsyjhs
-      </div>
-      <div id="speed_symbols" class="stat_block"> 
-      </div>
-      <div id="language" class="stat_block"> 
-      </div>
-      <div id="timer" class="stat_block"> 
-      </div>
-    </div>
-      <div id="texts_block"> <div id="text">
+
+
+    <div id="texts_block"> <div id="text">
       В часах хаоса и раздоров, когда тропинки души запутались в клубках нежданной судьбы, важно помнить о ценности мгновений. Ведь каждый вздох, каждый взгляд, каждое слово — частичка необратимой жизни. Стоит лишь остановиться, взглянуть вокруг и проникнуться этой закрученной мозаикой реальности. В истерзанном мире суеты и потерь настоящее словно мерцает звездой в бескрайнем космосе. И все мы — лишь крошечные песчинки на галактическом песке времени. Однако в этой многоликой вселенной каждый из нас несет в себе свою уникальную искру, способную осветить тьму и согреть холодные сердца. 
       Мы — странники в бескрайних просторах, изучающие азбуку жизни и любви, непрерывно познающие и переживающие нелегкие испытания. Пусть мы идем сквозь бурю и грозы, но в конце этого пути светит надежда и возможность переосмыслить свою жизнь. Ведь каждый миг — это новая страница в нашей истории, и каждый шаг наполнен бесконечными возможностями.
     </div></div>
-      <button onclick="startTest()">Начать тест</button>
+    <br>
+    <input type="text" id="input" autocomplete="off" oninput="checkText()">
+    <p id="result"></p>
+    <p id="error-msg" style="color: red;"></p>
+      
+    <button id="button_play" onclick="startTest()">Начать тест</button>
+    <button class="button_restart" onclick="restarttTest()">Начать тест</button>
+    <img src="/D:\Груп_сайт\IP-keyboard\reload_icon.png" />
+  
+  
   </div> 
- 
-
 </body>
 </html>
