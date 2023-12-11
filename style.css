@@ -99,13 +99,41 @@
     background-color: #EDEDED; 
     width: 100%;
     max-width: 1500px; 
-    
+    flex-direction: row;
     height: 300px; 
     } 
     
     #speed_words { 
     background-color: #A8B6FF; 
     border-radius: 20px;
-    width: 150px; 
+    width: 25%; 
     height: 100px; 
     }
+
+    #speed_symbols { 
+      background-color: #5F77F4; 
+      border-radius: 20px;
+      width: 25%; 
+      height: 100px; 
+      }
+
+      #speed_language { 
+        background-color: #2F49D4; 
+        border-radius: 20px;
+        width: 25%; 
+        height: 100px; 
+        }
+
+        #speed_timer { 
+          background-color: #152CA8; 
+          border-radius: 20px;
+          width: 25%; 
+          height: 100px; 
+          }
+
+          #texts { 
+            background-color: #152CA8; 
+            border-radius: 20px;
+            width: 25%; 
+            height: 100px; 
+            }
