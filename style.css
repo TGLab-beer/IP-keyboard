@@ -130,12 +130,14 @@
           height: 100px; 
           }
 
-          #texts { 
+          #texts_block { 
             background-color: #EDEDED; 
             border-radius: 20px;
             width: 100%; 
             text-align: justify;
             display: flex; 
-             
             
+            }
+            #text{
+              margin: 30px;
             }
