@@ -1,3 +1,9 @@
+header{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .container {
    
     max-width: 600px;
@@ -26,7 +32,6 @@ body{
     
     #speed_words { 
     background: linear-gradient(to right, #A8B6FF, #5F77F4);
-    background-color: #A8B6FF; 
     border-radius: 20px;
     width: 33%; 
     height: 100px;
@@ -41,7 +46,7 @@ body{
     }
 
     #speed_symbols { 
-      background: linear-gradient(to right, #5F77F4, #2F49D4);
+      background-color: #5F77F4;
       border-radius: 20px;
       width: 33%; 
       height: 100px; 
@@ -87,9 +92,9 @@ body{
 
 
 
-#footer{
 
-}
+
+
 #input{
   border-radius: 20px;
   padding: 0.4rem;
@@ -105,7 +110,7 @@ body{
   cursor: pointer;
 }
 
-.button_restart{
+#button_restart{
   border-radius: 50%;
   clip-path: circle(50%);
   height: 3em;
@@ -117,4 +122,10 @@ body{
 
 img{
   width: 100%;
+}
+
+footer{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }

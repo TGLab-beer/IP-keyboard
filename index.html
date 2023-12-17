@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="authors" content="Алексеев Д. Б., Алексеев А. Б., Дмитриев И. В., Палачёв К. С., Син Ди Сок">
+  <meta name="group" content="15.27Д-ПИ05/22б">
   <title>Тест скорости печати</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
@@ -8,9 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+<header ><h1>Тест скорости печати</h1></header>
 <body>
   <div class="container">
-    <h1>Тест скорости печати</h1>
     
     <div id="stats">
     
@@ -41,11 +44,16 @@
     <p id="error-msg" style="color: red;"></p>
       
     <button id="button_play" onclick="changeState('start')">Начать тест</button>
-    <button class="button_restart" onclick="restart()"><img src="reload_icon.png"/>
+    <button id="button_restart" onclick="restart()"><img src="reload_icon.png"/>
     </button>
   </div>  
   
   
   </div> 
 </body>
+<footer><p>Copyright © 
+  <time datetime="2023">2023</time> 
+  REU G.V. Plekhanov</p>
+<address>Moscow, Russia.</address>
+</footer>
 </html>
