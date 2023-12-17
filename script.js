@@ -10,13 +10,18 @@ const texts = ["Великолепная зеленая трава шуршит 
         state = "start";
       }
     }
+    document.addEventListener('DOMContentLoaded', function () {
+      var inputElement = document.getElementById('input');
 
+      inputElement.addEventListener('paste', function (event) {
+        event.preventDefault();
+      });
+    });
     function startTest() {
       var input = document.getElementById("input");
       input.value = "";
       input.disabled = false;
       input.focus();
-      document.getElementById("error-msg").innerHTML = "";
 
       var result = document.getElementById("result");
       var words = texts.length;
@@ -24,8 +29,13 @@ const texts = ["Великолепная зеленая трава шуршит 
       setInterval(function() {
         //var elapsedTime = (Date.now() - startTime) / 1000 / 60; // в минутах
         var typedWords = input.value.trim().split(" ").length;
+        var symbolsPerMinute = document.getElementById("speed_symbols");
+        symbolsPerMinute.textContent = Math.round((input.value.length / timer) * 60) + " символов в минуту";
+        var wordsPerMinute = document.getElementById("speed_words");
+        wordsPerMinute.textContent = Math.min(Math.round(((input.value.split(" ").length - 1) / timer) * 60), input.value.split(" ").length - 1) + " слов в минуту";
         if (input.value[input.value.length - 1] === texts[0][input.value.length - 1]) {
           var speed = typedWords / timer;
+          
           
           input.style.color = 'black';
           input.readOnly = false;
@@ -42,7 +52,7 @@ const texts = ["Великолепная зеленая трава шуршит 
           inputElement.style.color = 'red';
         }
         
-      }, 10);
+      }, 1);
 
       
       document.getElementById("text").innerHTML = texts[0];
