@@ -28,28 +28,23 @@ body{
     background: linear-gradient(to right, #A8B6FF, #5F77F4);
     background-color: #A8B6FF; 
     border-radius: 20px;
-    width: 25%; 
+    width: 33%; 
     height: 100px; 
     }
 
     #speed_symbols { 
       background: linear-gradient(to right, #5F77F4, #2F49D4);
       border-radius: 20px;
-      width: 25%; 
+      width: 33%; 
       height: 100px; 
       }
 
-      #language { 
-        background: linear-gradient(to right, #2F49D4, #5F77F4);
-        border-radius: 20px;
-        width: 25%; 
-        height: 100px; 
-        }
+      
 
         #timer { 
           background: linear-gradient(to right, #5F77F4, #A8B6FF);
         border-radius: 20px;
-          width: 25%; 
+          width: 33%; 
           height: 100px;
           color: white;
           text-shadow: 0.1em 0.1em#212121;

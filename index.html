@@ -21,11 +21,8 @@
         356<br>символово в минуту
       </div> 
       </div>
-      <div id="language"><div class="stat_text">
-        РУ <br>язык
-      </div> 
-      </div>
-      <div id="timer"><div class="stat_text">
+      
+      <div id="timer">Время: 0:00<div class="stat_text">
          
       </div> 
       </div>
@@ -41,11 +38,11 @@
       Мы — странники в бескрайних просторах, изучающие азбуку жизни и любви, непрерывно познающие и переживающие нелегкие испытания. Пусть мы идем сквозь бурю и грозы, но в конце этого пути светит надежда и возможность переосмыслить свою жизнь. Ведь каждый миг — это новая страница в нашей истории, и каждый шаг наполнен бесконечными возможностями.
     </div></div>
     <br>
-    <input type="text" id="input" autocomplete="off" oninput="checkText()">
+    <input type="text" id="input" autocomplete="off" onkeydown="handleKeyDown(event)" oninput="checkText()">
     <p id="result"></p>
     <p id="error-msg" style="color: red;"></p>
       
-    <button id="button_play" onclick="startTest()">Начать тест</button>
+    <button id="button_play" onclick="changeState('start')">Начать тест</button>
     <button class="button_restart" onclick="restartTest()"><img src="reload_icon.png"/>
     </button>
   </div>  
